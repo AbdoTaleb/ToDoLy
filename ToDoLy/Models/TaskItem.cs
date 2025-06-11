@@ -28,7 +28,8 @@ namespace ToDoLy.Models
 
         public override string ToString()
         {
-            return $"{Title} | Due: {DueDate.ToShortDateString()} | Project: {Project} | Done: {IsDone}";
+            string status = IsDone ? "Done" : "Not Done";
+            return $"{Title} | Due: {DueDate:yyyy-MM-dd} | Status: {status} | Project: {Project}";
         }
     }
 }
