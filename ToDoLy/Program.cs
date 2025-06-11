@@ -1,5 +1,6 @@
-﻿using ToDoLy.Services;
-using ToDoLy.Models;
+﻿using ToDoLy.Models;
+using ToDoLy.Persistence;
+using ToDoLy.Services;
 
 
 class Program
@@ -7,9 +8,13 @@ class Program
     
     static void Main(string[] args)
     {
-        TaskManager manager = new();
-        MenuService menu = new(manager);
+        var manager = new TaskManager();
+        manager.Tasks = FileService.Load(); 
+
+        var menu = new MenuService(manager);
         menu.ShowMainMenu();
+
+        FileService.Save(manager.Tasks);
 
     }
     
