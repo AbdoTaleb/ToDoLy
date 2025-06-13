@@ -53,7 +53,7 @@ Buy groceries|2025-06-12|Not Done|Home
 ```
 
 Each task contains:  
-**Title | Due Date | Status (Done / Not Done) | Project**
+```Title | Due Date | Status (Done / Not Done) | Project```
 
 ---
 
