@@ -17,9 +17,23 @@ It allows users to add, view, update, mark as done, and remove tasks. Tasks are 
 
 ## 🛠 Project Structure
 
-<pre><code>## 🛠 Project Structure 
-  ``` ToDoLy/ ├── Models/ │ └── TaskItem.cs # Represents a task │ ├── Services/ │ ├── TaskManager.cs # Manages the task list │ └── MenuService.cs # Handles menu UI and user input │ ├── Persistence/ │ └── FileService.cs # Handles saving/loading from a file │ ├── Program.cs # Entry point └── tasks.txt # Saved task list (auto-generated) ```
-</code></pre>
+
+  ```
+ToDoLy/
+├── Models/
+│ └── TaskItem.cs # Represents a task
+│
+├── Services/
+│ ├── TaskManager.cs # Manages the task list
+│ └── MenuService.cs # Handles menu UI and user input
+│
+├── Persistence/
+│ └── FileService.cs # Handles saving/loading from a file
+│
+├── Program.cs # Entry point
+└── tasks.txt # Saved task list (auto-generated) 
+  ```
+
 
 ---
 
